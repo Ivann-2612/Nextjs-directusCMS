@@ -1,15 +1,13 @@
-import {QueryClientProvider, QueryClient} from 'react-query'
 import './main.css'
-
-const queryClient = new QueryClient()
+import Layout from './components/Layout'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-  <QueryClientProvider client={queryClient}>
-    <Component {...pageProps} />
-  </QueryClientProvider>
-  </>
+    
+   <Layout>
+      <Component {...pageProps} />
+   </Layout>
+
   )
 }
 
