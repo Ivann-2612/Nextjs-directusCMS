@@ -23,7 +23,7 @@
 .card {
     background-color: #f2f2f2;
     color: #050505;
-    padding: 10px;
+    padding: 25px;
     border-bottom: 1px solid orangered;
 }
 .card:nth-child(1) {
@@ -53,7 +53,7 @@
     align-items: center;
 }
 .card:hover {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .btn {
   margin:15px auto;

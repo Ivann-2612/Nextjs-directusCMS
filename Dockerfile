@@ -1,16 +1,14 @@
 # Install dependencies only when needed
-FROM node:14
+FROM node
 
-RUN mkdir /frontend
+WORKDIR /app
 
-WORKDIR /frontend
-
-COPY ./package.json /frontend
+COPY package.json .
 
 RUN npm install 
 
-COPY . /frontend
+COPY . .
 
-RUN npm run build
+EXPOSE 3000
 
 CMD ["npm", "start"]

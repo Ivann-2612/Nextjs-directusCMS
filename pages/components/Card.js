@@ -12,7 +12,7 @@ const Card = () => {
 
     useEffect(() => {
       getAllPosts().then(res => {
-         console.log(res.data.data)
+          console.log(res.data.data)
           setArticles(res.data.data)
       })
   },[])
@@ -20,17 +20,17 @@ const Card = () => {
    
     return (
         <>
-                    <input className={styles.inputSearch} type='search' placeholder='Search title...' onChange={(e) => {setSearch(e.target.value)}} />
+         <input className={styles.inputSearch} type='search' placeholder='Search title...' onChange={(e) => {setSearch(e.target.value)}} />
 
              <main className="div">
       {
                articles?.filter((value) => {
                 if(search === '') {
                    return value
-                }else if (value.title.toLowerCase().includes(search.toLowerCase())) {
+                }else if (value.body.toLowerCase().includes(search.toLowerCase()) || value.title.toLowerCase().includes(search.toLowerCase())) {
                     return value
                 }  else {
-                 return    
+                 return null   
                 }
                             
             }).map((article,id) => {
@@ -38,6 +38,8 @@ const Card = () => {
                        <div className={styles.card} key={id}>
                            <h3>{article?.title}</h3>
                             {/* <img src={article?.images} alt={'New'} /> */}
+                            <img src={"http://localhost:8055/assets/files" + article.images} alt={article.title} />
+
                            {/* <p>{article?.description}</p> */}
                            <p className='text-left'>{article.body}</p>
                            <div className={styles.created}>
