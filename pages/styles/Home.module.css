@@ -1,0 +1,115 @@
+.mainDiv {
+    background-color: #050505;
+    color: #f2f2f2;
+    min-height: 100vh;
+    width: 100%;
+    padding: 5px 15px;
+}
+.mainDivHome {
+    color: #f2f2f2;
+    min-height: 100vh;
+    width: 100%;
+    border: 5px solid orangered;
+}
+.mainDivNinjas {
+    display: flex;
+    justify-content: space-between;
+    background-color: #050505;
+    color: #f2f2f2;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+.card {
+    background-color: #f2f2f2;
+    color: #050505;
+    padding: 25px;
+    border-bottom: 1px solid orangered;
+}
+.card:nth-child(1) {
+    border-top: 1px solid orangered;
+}
+.card h3 {
+    margin-bottom: 15px;
+}
+.card p {
+    color: rgb(145, 54, 20);
+}
+.card span {
+    display: block;
+    margin-top: 5px;
+    font-weight: 800;
+    color: gray;
+}
+.created {
+    margin-top: 10px;
+}
+.created,
+.updated {
+    opacity: 0.6;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.card:hover {
+    opacity: 0.9;
+}
+.btn {
+  margin:15px auto;
+  padding: 5px 15px;
+  border: 1px solid gray;
+  color:blue;
+  display:block;
+  width: 150px;
+  text-align:center;
+}
+.backToTop {
+    display: block;
+    margin: 5px;
+    margin-left: auto;
+    padding: 5px 10px;
+    background-color: #050505;
+    color: #f2f2f2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid transparent;
+}
+.backToTop:hover {
+    color: #050505;
+    background-color: transparent;
+    border: 1px solid #050505;
+}
+.inputSearch {
+    display: block;
+    padding: 7px 15px;
+    margin: 20px auto;
+    width: 30%;
+    border: 2px solid gray;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.notFound {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    min-height: 60vh;
+    align-items: center;
+}
+.notFound h1 {
+    color: tomato;
+    font-size: 3rem;
+}
+.notFound p {
+    color: tomato;
+    font-size: 1.5rem;
+}
+.notFound a {
+    color: #4979ff;
+    text-decoration: underline;
+}
+.notFound a:hover {
+    color: #050505;
+}
