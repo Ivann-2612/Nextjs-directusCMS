@@ -26,6 +26,11 @@
     padding: 25px;
     border-bottom: 1px solid orangered;
 }
+.card hr {
+    display: block;
+    margin-top: 15px;
+    opacity: 0.3;
+}
 .card:nth-child(1) {
     border-top: 1px solid orangered;
 }
@@ -81,6 +86,12 @@
     color: #050505;
     background-color: transparent;
     border: 1px solid #050505;
+}
+.divInput {
+    width: 100%;
+    background-color: #FCFCFC;
+    padding: 1px;
+
 }
 .inputSearch {
     display: block;

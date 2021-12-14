@@ -1,19 +1,23 @@
 {
+  "homepage": "https://Ivann-2612.github.io/Nextjs-directusCMS",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build && next export",
+    "export": "npm run build && next export",
+    "dev": "next dev",
     "start": "next start"
   },
   "dependencies": {
     "axios": "^0.24.0",
     "next": "latest",
+    "next-server": "^9.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "^3.34.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.4"
   }

@@ -1,17 +1,16 @@
-import React from "react"
-import Link from 'next/link'
-import Image from 'next/image'
-
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     <div>
       <nav>
-        <div className='logoDiv'>
-          <Image width={60} height={60} src='/logoOne.png' alt='logo' />
+        <div className="logoDiv">
+          <Image width={60} height={60} src="/logoOne.png" alt="logo" />
         </div>
-        <div className='links'>
-             <Link href="/">
+        <div className="links">
+          <Link href="/">
             <a>Home</a>
           </Link>
           <Link href="/about">
@@ -24,7 +23,6 @@ const Navbar = () => {
             <a>Images</a>
           </Link>
         </div>
-       
       </nav>
     </div>
   );
